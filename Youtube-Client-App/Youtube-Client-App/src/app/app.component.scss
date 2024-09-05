@@ -1,0 +1,48 @@
+.home-container {
+  height: 100vh;
+  background-color: #2c2c2c;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #f4511e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+
+.login-button:hover {
+  background-color: #e34a0e;
+  transform: scale(1.05);
+}
+
+.login-button:active {
+  transform: scale(1);
+}
+
+.background-image {
+  width: 500px;
+  height: 500px;
+  background-image: url('/assets/logo-1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+}
+
+/* Prevent scrolling on the entire page */
+body {
+  overflow: hidden;
+}
